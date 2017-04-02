@@ -51,11 +51,14 @@ describe Calculator do
   	it 'should raise number to its power' do
   		expect(Calculator.new.pow(2,3)).to eq(8)
   	end
+    it 'should raise number to its negative power' do
+    	expect(Calculator.new.pow(2,-3)).to eq(2 ** -3)
+    end
   end
 
   describe '#stringify' do
   	it 'should return answer as a string' do
-  		expect(Calculator.new.add(1,1)).to eq(2.to_s)
+  		expect(Calculator.new.add(1,1)).to eq("2")
   	end
   end
 
