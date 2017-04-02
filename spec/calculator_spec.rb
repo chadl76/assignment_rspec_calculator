@@ -56,9 +56,15 @@ describe Calculator do
     end
   end
 
+  describe '#sqrt' do
+  	it 'should return the square root of integer' do
+  		expect(Calculator.new.sqrt(16)).to eq(Math.sqrt(16))
+  	end
+  end
+
   describe '#stringify' do
   	it 'should return answer as a string' do
-  		expect(Calculator.new.add(1,1)).to eq("2")
+      expect(Calculator.new(true).add(1,1)).to eq(2.to_s)
   	end
   end
 
