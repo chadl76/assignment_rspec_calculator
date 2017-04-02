@@ -6,7 +6,7 @@ class Calculator
 
 
   def add(a,b)
-    output(a+b)
+    output(a + b)
   end
 
 
